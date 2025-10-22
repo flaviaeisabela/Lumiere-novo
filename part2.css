@@ -1,0 +1,259 @@
+header{
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#esquerda {
+     position: absolute;
+    left: -0%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+     }
+ #div1 {
+    position: absolute;
+    top: 225px;
+    border-bottom: 5px solid gray;
+    width: 273px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+.cinza {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    
+ }
+#texto{
+ position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#barrac{
+ position: absolute;
+ top: 10%;
+    left: 68%;
+    width: 216px;
+    height: 38px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex{
+ position: absolute;
+ top: 18%;
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#filtrar{
+position: absolute;
+top: 85%;
+left: 95%;
+font-size: 20px;
+color: black;
+padding: 10px;
+}
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #a49c9c;
+  --border-color: #3b3535;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#000000);
+
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before{
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+.form:focus-within:before {
+  transform: scale(1);
+}
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+/* From Uiverse.io by SelfMadeSystem */ 
+.outline {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.rect {
+  stroke-dashoffset: 5;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s;
+  stroke: #000000;
+}
+
+.nav {
+  position: relative;
+    right: 37.5%;
+  width: 400px;
+  height: 60px;
+
+}
+
+.container:hover .outline .rect {
+  transition: 999999s;
+  /* Must specify these values here as something *different* just so that the transition works properly */
+  stroke-dashoffset: 1;
+  stroke-dasharray: 0;
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  background: rgba(193, 189, 189, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.btn {
+  padding: 0.5em 1.5em;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn:nth-child(1):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 2 8 73.3 8 10.7;
+}
+
+.btn:nth-child(2):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+}
+
+.btn:nth-child(3):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+}
+
+.btn:nth-child(4):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+}
+
+.btn:hover ~ .outline .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s !important;
+}
+.In1{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: ;
+  bottom: ;
+}

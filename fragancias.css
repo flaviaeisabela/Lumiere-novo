@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Fonte1';
+  src: url('fontes/OPTINaval.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 30px;
+}
+
+#esquerda {
+    position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#frag {
+    position: absolute;
+    top: 225px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+#frags {
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out forwards;
+    font-family: 'Fonte1', sans-serif;
+}
+#fragancias {
+    position: absolute;
+    top: 330px;
+}
+.fragsimg {
+    width: 450px;
+    height: 450px;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

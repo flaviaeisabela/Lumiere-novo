@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Fonte1';
+  src: url('fontes/OPTINaval.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+header {
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#esquerda {
+    position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#div1 {
+    position: absolute;
+    top: 225px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    border: 5px solid black;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+#tituloav {
+    border-bottom: 2px solid black;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+#nota {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size: 30px;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+#texto {
+    position: absolute;
+    top: 50%;
+    width: 450px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+    border: 6px solid black;
+    resize: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+#texto::placeholder {
+    position: absolute;
+    top: 30%;
+}
+
+#div2 {
+    position: absolute;
+    top: 380px;
+    left: 210px;
+}
+
+.estrelas {
+    width: 40px;
+    height: 40px;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+.botaostar {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#avali {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-size: 30px;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+#dados {
+    position: absolute;
+    top: 23%;
+    font-size: 35px;
+    right: 8%;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+#redes {
+    position: absolute;
+    top: 30%;
+    font-size: 40px;
+    right: 4%;
+    color: gray;
+    font-family: 'Fonte1', sans-serif;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+.redesb {
+    width: 85px;
+    height: 85px;
+    border: none;
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+.google {
+    position: absolute;
+    top: 45%;
+    right: 8%;
+}
+.facebook {
+    position: absolute;
+    top: 45%;
+    right: 17%;
+}

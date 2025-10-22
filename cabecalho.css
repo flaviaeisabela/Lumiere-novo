@@ -1,0 +1,105 @@
+
+header {
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#esquerda {
+    position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#div1 {
+    position: absolute;
+    top: 225px;
+    border-bottom: 5px solid gray;
+    width: 273px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+.cinza {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+}
+#div2 {
+    position: absolute;
+    top: 400px;
+    border-bottom: 5px solid gray;
+    width: 273px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.preto {
+    color: black;
+    font-size: 30px;
+    margin-top: 1px;
+}
+.margemb {
+    margin-bottom: 30px;
+}
+#div3 {
+    position: absolute;
+    top: 550px;
+    width: 273px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

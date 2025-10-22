@@ -1,0 +1,93 @@
+header {
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#esquerda {
+     position: absolute;
+    left: -0%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+     }
+
+.cinza {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    
+ }
+#texto{
+ position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#barrac{
+ position: absolute;
+ top: 10%;
+    left: 68%;
+    width: 216px;
+    height: 38px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex{
+ position: absolute;
+ top: 18%;
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#blush{
+position: absolute;
+top: 27%;
+left: 0%;
+width: 545px;
+height: 605px;
+}

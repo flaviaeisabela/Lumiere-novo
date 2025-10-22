@@ -1,0 +1,172 @@
+header {
+    background-color: black;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#barra {
+    border-bottom: 3px solid gray;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: end;
+}
+#mostrar {
+    position: absolute;
+    top: 200px;
+} 
+
+.mostrarm {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#esquerda {
+     position: absolute;
+    left: -0%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+     }
+ #div1 {
+    position: absolute;
+    top: 225px;
+    border-bottom: 5px solid gray;
+    width: 273px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+.cinza {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    
+ }
+#texto{
+ position: absolute;
+    left: 1%;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#barrac{
+ position: absolute;
+ top: 10%;
+    left: 68%;
+    width: 216px;
+    height: 38px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex{
+ position: absolute;
+ top: 18%;
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#filtrar{
+position: absolute;
+ top: 19%;
+    left: 80%;
+}
+
+#div2{
+position:absolute;
+top:225px
+border-bottom 5px solid gray;
+width: 273px;
+left:5%;
+animation:fadeln 2s ease-in-out forwards;
+opacity:0;
+}
+#Filtrar{
+    font-size: 100px;
+}
+#batom1{
+ position: absolute;
+
+ top: 37%;
+    left: 5%;
+    width: 260px;
+    height: 300px;
+}
+
+#batom2{
+ position: absolute;
+ top: 37%;
+    left: 25%;
+    width: 260px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#batom3{
+ position: absolute;
+ top: 37%;
+    left: 70%;
+    width: 260px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#batom4{
+ position: absolute;
+ top: 37%;
+    left: 47%;
+    width: 260px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#preco3{
+   position: absolute;
+ top: 640%;
+    left: 75%;
+    text-align: center;
+}
+#preco2{
+   position: absolute;
+ top: 900%;
+    left: 75%;
+    text-align: center;
+}
+#preco1{
+position: absolute;
+ top: 640%;
+    left: 18%;
+    text-align: center;
+}
+#preco4{
+position:absolute;
+top: 650%;
+    left: 50%;
+    text-align: center;
+}
