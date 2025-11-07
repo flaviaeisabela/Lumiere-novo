@@ -23,8 +23,8 @@ header {
 }
 
 .itens {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: end;
 }
@@ -46,10 +46,12 @@ header {
 
 #esquerda {
      position: absolute;
-    left: -0%;
+     top: 0%;
+    left: 0%;
     font-size: 60px;
     margin-bottom: 10px;
     margin-top: 10px;
+    top: 10%;
      }
  #div1 {
     position: absolute;
@@ -71,15 +73,6 @@ header {
  position: absolute;
     left: 1%;
     font-size: 60px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-#barrac{
- position: absolute;
- top: 10%;
-    left: 68%;
-    width: 216px;
-    height: 38px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -106,14 +99,11 @@ width: 273px;
 left:5%;
 animation:fadeln 2s ease-in-out forwards;
 opacity:0;
-}
-#Filtrar{
-    font-size: 100px;
+
 }
 #batom1{
  position: absolute;
-
- top: 37%;
+ top: 170%;
     left: 5%;
     width: 260px;
     height: 300px;
@@ -121,52 +111,153 @@ opacity:0;
 
 #batom2{
  position: absolute;
- top: 37%;
+ top: 170%;
     left: 25%;
     width: 260px;
     height: 300px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 #batom3{
  position: absolute;
- top: 37%;
+ top: 170%;
     left: 70%;
     width: 260px;
     height: 300px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+   
 }
 #batom4{
  position: absolute;
- top: 37%;
+ top: 170%;
     left: 47%;
     width: 260px;
     height: 300px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+   
 }
 #preco3{
    position: absolute;
- top: 640%;
-    left: 75%;
+ top: 650%;
+    left: 53%;
     text-align: center;
 }
 #preco2{
    position: absolute;
- top: 900%;
+ top: 650%;
     left: 75%;
     text-align: center;
 }
 #preco1{
 position: absolute;
- top: 640%;
-    left: 18%;
+ top: 650%;
+    left: 11%;
     text-align: center;
 }
 #preco4{
 position:absolute;
 top: 650%;
-    left: 50%;
+    left: 29%;
     text-align: center;
+
+}
+.filter {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
+  transition: all 0.3s;
+
+}
+filter svg {
+  height: 16px;
+  fill: rgb(77, 77, 77);
+  transition: all 0.3s;
+  }
+.filter:hover {
+  
+  background-color: rgb(59, 59, 59);
+}
+.filter:hover svg {
+  fill: white;
+}
+#text12{
+   cursor: pointer;
+  position: relative;
+  top: 510px;
+  right: 655px;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+
+}
+.check {
+  cursor: pointer;
+  position: relative;
+  top: 525px;
+  right: 310px;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4a4747;
+}
+
+#cbx:checked + .check svg {
+  stroke: #000000;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
 }
